@@ -45,30 +45,30 @@
   </header>
 <main class="flex flex-col lg:flex-row gap-5 px-10 mt-10">
   <div class="w-full lg:w-[70%] grid grid-cols-1 lg:grid-cols-3 gap-5">
-    <div class="border border-green-500 p-5 flex flex-col gap-3">
+    <div class="border border-green-500 p-5 flex flex-col gap-5">
       <!-- card icons -->
       <div class="flex justify-between items-center">
-        <img src="./assets/emergency.png" alt="" class="w-8">
+        <img src="./assets/emergency.png" alt="" class="w-10 p-1.5 bg-red-200/40 rounded-sm">
         <i data-feather="heart"></i>
       </div>
       <!-- card Titles -->
       <div class="">
-        <h2>জাতীয় জরুরি সেবা</h2>
-        <p>National Emergency</p>
+        <h2 class="font-semibold text-xl">জাতীয় জরুরি সেবা</h2>
+        <p class="text-gray-400">National Emergency</p>
       </div>
       <!-- Card Numbers -->
-      <div class="">
-        <h3>999</h3>
-        <span class="bg-gray-300 p-1 rounded-full text-x">সার্বজনীন</span>
+      <div class="flex flex-col justify-center items-start gap-1">
+        <h3 class="text-4xl font-semibold ">999</h3>
+        <span class="bg-gray-300/30 text-gray-400 px-3 py-1 rounded-full text-xs">সার্বজনীন</span>
       </div>
       <!-- Cards Buttons -->
-      <div class="flex justify-between items-center">
-        <button class="flex justify-center items-center gap-2">
-          <i data-feather="copy"></i>
+      <div class="flex justify-between items-center gap-3">
+        <button class="flex justify-center items-center gap-2 bg-gray-100 flex-1 py-2 rounded">
+          <i data-feather="copy" style="width: 16px;"></i>
           Copy
         </button>
-        <button class="flex justify-center items-center gap-2">
-          <i data-feather="phone-call"></i>
+        <button class="flex justify-center items-center gap-2 flex-1 bg-green-500 py-2 rounded text-white">
+          <i data-feather="phone-call" style="width: 16px;" class="text-white"></i>
           Call
         </button>
       </div>

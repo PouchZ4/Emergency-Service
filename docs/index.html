@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- Nav Start  -->
+    <nav class="flex justify-between items-center px-10 py-2 bg-green-200/20">
+      <div class="log flex justify-center items-center gap-3">
+        <img src="./assets/logo.png" alt="site logo text" class="w-14">
+        <span>Emergency <br>Service</span>
+      </div>
+      <div class="flex justify-center items-center gap-3">
+        <!-- favourite list Count -->
+        <div class="flex items-center justify-center gap-1 bg-green-200/40 px-8 py-2 rounded-full">
+          <span>0</span>
+          <img src="./assets/heart.png" alt="" class="w-5">
+        </div>
+        <!-- Coin Balance -->
+        <div class="flex items-center justify-center gap-1 bg-green-200/40 px-8 py-2 rounded-full">
+          <span>0</span>
+          <img src="./assets/coin.png" alt="" class="w-5">
+        </div>
+        <!-- Copy Count -->
+        <div class="flex items-center justify-center gap-1 bg-green-600 px-8 py-2 rounded-full">
+          <p><span>0</span> Copy</p>
+        </div>
+
+      </div>
+    </nav>
+    <!-- Nan End -->
+
+    <!-- Banner Section Start -->
+     <section class="bg-green-950 py-5">
+      <div class="text-white flex flex-col justify-center items-center gap-2">
+        <img src="./assets/logo-dark.png" alt="" class="w-30">
+        <h1>জরুরি সেবা ডিরেক্টরি</h1>
+        <P>Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</P>
+      </div>
+     </section>
+    <!-- Banner Section End -->
+  </header>
+<main class="flex flex-col lg:flex-row gap-5 px-10 mt-10">
+  <div class="w-full lg:w-[70%] grid grid-cols-1 lg:grid-cols-3 gap-5">
+    <div class="border border-green-500 p-5 flex flex-col gap-3">
+      <!-- card icons -->
+      <div class="flex justify-between items-center">
+        <img src="./assets/emergency.png" alt="" class="w-8">
+        <i data-feather="heart"></i>
+      </div>
+      <!-- card Titles -->
+      <div class="">
+        <h2>জাতীয় জরুরি সেবা</h2>
+        <p>National Emergency</p>
+      </div>
+      <!-- Card Numbers -->
+      <div class="">
+        <h3>999</h3>
+        <span class="bg-gray-300 p-1 rounded-full text-x">সার্বজনীন</span>
+      </div>
+      <!-- Cards Buttons -->
+      <div class="flex justify-between items-center">
+        <button class="flex justify-center items-center gap-2">
+          <i data-feather="copy"></i>
+          Copy
+        </button>
+        <button class="flex justify-center items-center gap-2">
+          <i data-feather="phone-call"></i>
+          Call
+        </button>
+      </div>
+    </div>
+    <div class="border border-green-500 p-5"></div>
+    <div class="border border-green-500 p-5"></div>
+    <div class="border border-green-500 p-5"></div>
+    <div class="border border-green-500 p-5"></div>
+    <div class="border border-green-500 p-5"></div>
+    <div class="border border-green-500 p-5"></div>
+    <div class="border border-green-500 p-5"></div>
+    <div class="border border-green-500 p-5"></div>
+    
+  </div>
+  <div class="w-full lg:w-[30%] border border-blue-600 p-10"></div>
+</main>
+
+
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>

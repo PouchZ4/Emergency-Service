@@ -9,21 +9,21 @@
     let favCount = 0;
 
     heartIcons.forEach(icon => {
-        icon.addEventListener('click', () => {
-            // যদি আগেই রেড হয় (active), তখন হটাও
-            if(icon.classList.contains('text-red-600')){
-                icon.classList.remove('text-red-600');
-                favCount--;
-            } else {
-                // রেড কালার যোগ করো
-                icon.classList.add('text-red-600');
-                favCount++;
-            }
-            // হেডারের Favourite Count আপডেট করো
-            favCountSpan.textContent = favCount;
-        });
+    icon.addEventListener('click', () => {
+        if(icon.classList.contains('fas')) {
+            // ফিল্ড থাকলে আনফিল্ডে ফেরত
+            icon.classList.remove('fas', 'text-red-600');
+            icon.classList.add('far'); 
+            favCount--;
+        } else {
+            // আনফিল্ড থাকলে ফিল্ড করে দাও
+            icon.classList.remove('far');
+            icon.classList.add('fas', 'text-red-600');
+            favCount++;
+        }
+        favCountSpan.textContent = favCount;
     });
-
+});
 
 
 
